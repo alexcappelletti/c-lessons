@@ -1,16 +1,16 @@
 #include "pointer-sample.h"
 #include <stdio.h>
 void printPointers(){
-	int myAge = 43;	   // An int variable
-	int *ptr = &myAge; // A pointer variable, with the name ptr, that stores the address of myAge
-	// Output the value of myAge (43)
-	printf("%d\n", myAge);
+	int var = 10;
 
-	// Output the memory address of myAge (0x7ffe5367e044)
-	printf("%p\n", &myAge);
+	// declare pointer variable
+	int *ptr;
 
-	// Output the memory address of myAge with the pointer (0x7ffe5367e044)
+	// note that data type of ptr and var must be same
+	ptr = &var;
 
-	printf("%p\n", ptr);
-
+	// assign the address of a variable to a pointer
+	printf("Value at ptr = %p \n", ptr);
+	printf("Value at var = %d \n", var);
+	printf("Value at *ptr = %d \n", *ptr);
 }
