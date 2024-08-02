@@ -4,8 +4,9 @@
 // #include "useAssert.h"
 
 // #include "readerStrings.h"
-#include "mycalculator.h"
+//#include "mycalculator.h"
 #include <assert.h>
+#include <tempConverter.h>
 int main() {
 	// printPointers();
 	// printPointers();
@@ -25,16 +26,23 @@ int main() {
 	// readStringFromConsole(textLine, 20);   ///error
 	// len = sizeof(textLine) / sizeof(char);
 	// assert(len == 10 && "array has wrong number of elemnts ");
-	unsigned int a=50, b=25;
-	printf("my sum triple for %d, %d is %d\n", a, b, sumTriple(a, b) );
-	a=1;
-	b=3;
-	printf("my sum triple for %d, %d is %d\n", a, b, sumTriple(a, b));
+	// unsigned int a=50, b=25;
+	// printf("my sum triple for %d, %d is %d\n", a, b, sumTriple(a, b) );
+	// a=1;
+	// b=3;
+	// printf("my sum triple for %d, %d is %d\n", a, b, sumTriple(a, b));
 
-	printf("la subtactTriple per i valori %d, %d é %d\n", a, b, subtractTriple(a, b));
-	assert(invertedSubtractTriple(1,1) == 0);
-	assert(invertedSubtractTriple(a,b) == -2);
-	printf("la invertedSubtractTriple per i valori %d, %d é %d\n", a, b, invertedSubtractTriple(a, b));
+	// printf("la subtactTriple per i valori %d, %d é %d\n", a, b, subtractTriple(a, b));
+	// assert(invertedSubtractTriple(1,1) == 0);
+	// assert(invertedSubtractTriple(a,b) == -2);
+	// printf("la invertedSubtractTriple per i valori %d, %d é %d\n", a, b, invertedSubtractTriple(a, b));
+
+	celsiusToFahrenheit();
+	celsiusToKelvin();
+	fahrenheitToCelsius();
+	fahrenheitToKelvin();
+	kelvinToCelsius();
+	kelvinToFahrenheit();
 
 	return 0;
 }
