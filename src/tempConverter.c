@@ -8,8 +8,7 @@ sorgente e della destinazione da input. */
 #include <stdio.h>
 #include <assert.h>
 #include <stdbool.h> 
-void celsiusToFahrenheit()
-{
+void celsiusToFahrenheit() {
 	double tc, tf, conv, offset;
 	conv = 5. / 9.;
 	offset = 32.;
@@ -20,8 +19,8 @@ void celsiusToFahrenheit()
 	printf("(=%5.2f / %5.2f - %3.1f) gradi\n", tc, conv, offset);
 }
 
-void celsiusToKelvin(){assert(true && "to be implemented");} //signals to be implemented
-void fahrenheitToCelsius() { assert(true && "to be implemented"); }; // signals to be implemented
-void fahrenheitToKelvin() { assert(true && "to be implemented"); };	 // signals to be implemented
-void kelvinToCelsius() { assert(true && "to be implemented"); };	 // signals to be implemented
-void kelvinToFahrenheit() { assert(true && "to be implemented"); };	 // signals to be implemented
+void celsiusToKelvin(){assert(false && "to be implemented");} //signals to be implemented
+void fahrenheitToCelsius() { assert(false && "to be implemented"); }; // signals to be implemented
+void fahrenheitToKelvin() { assert(false && "to be implemented"); };	 // signals to be implemented
+void kelvinToCelsius() { assert(false && "to be implemented"); };	 // signals to be implemented
+void kelvinToFahrenheit() { assert(false && "to be implemented"); };	 // signals to be implemented
